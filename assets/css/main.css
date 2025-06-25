@@ -56,11 +56,6 @@ table {
   box-sizing: border-box;
 }
 
-:root {
-  --text-color: #1A162E;
-  --icon-color: brightness(0) saturate(100%) invert(8%) sepia(13%) saturate(2943%) hue-rotate(211deg) brightness(90%) contrast(96%);
-}
-
 html {
   font-size: 62.5%;
 }
@@ -1141,13 +1136,31 @@ button, input, textarea, select {
     --grid-gutter-y: 90px;
   }
 }
+:root {
+  --text-color: #1A162E;
+  --icon-color: brightness(0) saturate(100%) invert(8%) sepia(13%) saturate(2943%) hue-rotate(211deg) brightness(90%) contrast(96%);
+  --header-bg-color: #EEE;
+  --top-act-group-bg-color: #FFF;
+  --top-act-group-shadow: rgba(237, 237, 246, 0.20);
+  --top-act-group-separate: #EDEDF6;
+}
+
+html.dark {
+  --text-color: #FFF;
+  --icon-color: brightness(0) saturate(100%) invert(95%) sepia(97%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
+  --header-bg-color: #171C28;
+  --top-act-group-bg-color: #292E39;
+  --top-act-group-shadow: rgba(0, 0, 0, 0.20);
+  --top-act-group-separate: #EDEDF6;
+}
+
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
   display: flex;
   align-items: center;
 }
 
 .header {
-  background: #EEE;
+  background: var(--header-bg-color);
 }
 
 .top-bar {
@@ -1178,8 +1191,8 @@ button, input, textarea, select {
   min-width: 50px;
   height: 50px;
   border-radius: 8px;
-  background: #FFF;
-  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+  background: var(--top-act-group-bg-color);
+  box-shadow: 0px 20px 60px 10px var(--top-act-group-shadow);
 }
 .top-act__group--single .top-act__btn {
   padding: 13px;
@@ -1197,7 +1210,7 @@ button, input, textarea, select {
 .top-act__separate {
   width: 1px;
   height: 30px;
-  background: #EDEDF6;
+  background: var(--top-act-group-separate);
 }
 .top-act__avatar {
   width: 50px;
