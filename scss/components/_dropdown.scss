@@ -1,0 +1,29 @@
+.dropdown {
+    position: absolute;
+    left: 0;
+    padding-top: 54px;
+    display: none;
+
+
+    &__inner {
+        position: relative;
+        padding: 30px;
+        border-radius: 20px;
+        background: var(--dropdown-bg-color);
+        box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: var(--arrow-left-pos);
+            translate: -50%;
+            width: 24px;
+            height: 24px;
+            background-color: var(--dropdown-bg-color);
+            border-radius: 3px;
+            transform: rotate(45deg);
+            // z-index: -1;
+        }
+    }
+}

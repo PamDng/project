@@ -11,8 +11,12 @@
     --top-act-group-shadow:  rgba(237, 237, 246, 0.20);
     --top-act-group-separate: #EDEDF6;
 
+    // Dropdown
+    --dropdown-bg-color: #FFF;
+    --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
+
     @include abstracts.breakpoint(lg) {
         --header-bg-color: #FFF;
-    }
+    };
     
 }
