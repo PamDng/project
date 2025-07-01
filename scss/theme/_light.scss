@@ -15,6 +15,10 @@
     --dropdown-bg-color: #FFF;
     --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
     --top-menu-border-color: #D2D1D6;
+
+    // Sidebar 
+    --sidebar-bg: #FFF;
+    --sidebar-shadow: rgba(200, 200, 200, 0.40);
    
 
     @include abstracts.breakpoint(lg) {
