@@ -4,6 +4,8 @@ html.dark {
     --text-color: #FFF;
     --icon-color: brightness(0) saturate(100%) invert(95%) sepia(97%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
 
+    --body-bg: #292E39;
+
     --header-bg-color: #171C28;
     --top-act-group-bg-color: #292E39;
     --top-act-group-shadow:  rgba(0, 0, 0, 0.20);
@@ -19,7 +21,21 @@ html.dark {
     --sidebar-bg:#292E39;
     --sidebar-shadow: rgba(23, 28, 40, 0.40);
 
-     @include abstracts.breakpoint(lg) {
+    // Category
+    --cate-item-bg: #171C28;
+    --cate-item-thumb-bg: #292E39;
+    --cate-item-title-color: #FFF;
+
+        // Buttons
+    --filter-btn-color: #FFF;
+    --filter-btn-bg: #171C28;
+
+    // Product card
+    --product-card-bg: #171C28;
+    --product-card-shadow:rgba(0, 0, 0, 0.20);
+
+
+     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.20);
     };
     
