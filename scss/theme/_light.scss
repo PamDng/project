@@ -34,6 +34,12 @@
     --product-card-bg: #FFF;
     --product-card-shadow:rgba(237, 237, 246, 0.20);
 
+    // filter form
+    --filter-form-bg: var(--dropdown-bg-color);
+    --filter-form-shadow: rgba(200, 200, 200, 0.40);    
+    --filter-form-heading: #1A162E;
+    --filter-form-tag-bg: #F8F8FB;
+
     @include abstracts.screen(md) {
         --cate-item-bg: #FFF;
     };

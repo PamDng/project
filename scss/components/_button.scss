@@ -39,3 +39,52 @@
         margin-top: 8px;
     }
 }
+
+// Buttons
+.btn {
+    height: 46px;
+    padding: 0 20px;
+    border-radius: 6px;
+
+    background: #f8f8f8;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 144.444%; /* 144.444% */
+
+    user-select: none;
+
+    + .btn {
+        margin-left: 20px;
+    }
+
+    &--text {
+        color: #9E9DA8;
+        font-weight: 400;
+        background: transparent;
+    }
+
+    &--primary {
+        background: #FFB700;
+        color: #1A162E;
+    }
+
+    &--outline {
+        background: transparent;
+        border: 1px solid #D2D1D6;
+    }
+
+    &--rounded {
+        border-radius: 99px;
+    }
+
+    &[disable],
+    &--disable {
+        opacity: 0.5;
+        pointer-events: none
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
