@@ -7,6 +7,9 @@ html.dark {
     --body-bg: #292E39;
 
     --header-bg-color: #171C28;
+    --footer-bg-color: var(--header-bg-color);
+    --footer-form-border-color: #FFF;
+    
     --top-act-group-bg-color: #292E39;
     --top-act-group-shadow:  rgba(0, 0, 0, 0.20);
     --top-act-group-separate: #EDEDF6;
@@ -41,6 +44,20 @@ html.dark {
     --filter-form-tag-bg: #171C28;
     --filter-form-arrow: brightness(0) saturate(100%) invert(12%) sepia(8%) saturate(2157%) hue-rotate(183deg) brightness(96%) contrast(83%);
 
+    //Forms
+    --form-placeholder-color: #B9BABE;
+
+    --auth-content-bg: #292E39;;
+    --auth-intro-bg: #171C28;
+    --auth-intro-text-color: #B9BABE;
+    --auth-heading-color: #B9BABE;
+
+    // Product detail
+    --product-detail-bg: #292E39;
+
+    //Breadcrumbs 
+    --breadcrumbs-bg: #171C28;
+    --breadcrumb-shadow: rgba(23, 28, 40, 0.20);
 
      @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.20);

@@ -7,6 +7,9 @@
     --body-bg: #F6F6F6;
 
     --header-bg-color: #EEE;
+    --footer-bg-color: var(--header-bg-color);
+    --footer-form-border-color: #171C28;
+
     --top-act-group-bg-color: #FFF;
     --top-act-group-shadow:  rgba(237, 237, 246, 0.20);
     --top-act-group-separate: #EDEDF6;
@@ -39,6 +42,22 @@
     --filter-form-shadow: rgba(200, 200, 200, 0.40);    
     --filter-form-heading: #1A162E;
     --filter-form-tag-bg: #F8F8FB;
+
+    //Forms
+    --form-placeholder-color: #D2D1D6;
+
+    // Product detail
+    --product-detail-bg: #FFF;
+
+    //Breadcrumbs 
+    --breadcrumbs-bg: #F6F6F6;
+    --breadcrumb-shadow: rgba(237, 237, 246, 0.20);
+    
+    // Auth
+    --auth-content-bg: #FFF;
+    @include abstracts.screen(md) {
+        --auth-intro-bg: #FFF;
+    }
 
     @include abstracts.screen(md) {
         --cate-item-bg: #FFF;
